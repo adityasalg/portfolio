@@ -1,6 +1,6 @@
 import React, { forwardRef } from "react";
 import "./About.css";
-import { getAge } from "../../utils/CommonUtils.js";
+import { getYearFromDate } from "../../utils/CommonUtils.js";
 const About = ({ props }, ref) => {
   return (
     <>
@@ -42,7 +42,7 @@ const About = ({ props }, ref) => {
           <h1 className="about-me-heading">About me!</h1>
           <div className="about-me-paragraph-container">
             <p>
-              Hi I am Aditya Salgaonkar, a {getAge("1997-05-16")} year old  mobile app developer with over 4+ years of experience in the industry. I specialize in React Native for mobile app development and have extensive full-stack experience with a tech stack that includes React and Node.js. I am a committed and innovative professional with strong analytical and debugging skills.
+              Hi I am Aditya Salgaonkar, a {getYearFromDate("1997-05-16")} year old  mobile app developer with over {getYearFromDate("2020-03-01")}+ years of experience in the industry. I specialize in React Native for mobile app development and have extensive full-stack experience with a tech stack that includes React and Node.js. I am a committed and innovative professional with strong analytical and debugging skills.
               {/* <a
                 className="location-link"
                 href="https://maps.app.goo.gl/xsefgSyUrXc38uXC9"

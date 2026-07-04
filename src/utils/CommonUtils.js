@@ -1,4 +1,4 @@
-export const getAge = (birthDate) => {
+export const getYearFromDate = (fromDate) => {
     const today = new Date()
-    return Math.floor(( today.getTime() - new Date(birthDate).getTime()) / 3.15576e+10);
+    return Math.floor(( today.getTime() - new Date(fromDate).getTime()) / 3.15576e+10);
 }
